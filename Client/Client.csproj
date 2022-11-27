@@ -15,14 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Server\Server.csproj" />
     <ProjectReference Include="..\Shared\Shared.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Shared">
-      <HintPath>..\Shared\bin\Debug\net6.0\Shared.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>

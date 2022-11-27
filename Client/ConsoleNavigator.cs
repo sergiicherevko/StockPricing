@@ -48,7 +48,7 @@ namespace Client
 
             using (var client = new HttpClient())
             {
-                var endpoint = new Uri($"http://localhost:39878/values/getUser?email={email}&password={password}");
+                var endpoint = new Uri($"https://stockpricing.azurewebsites.net/values/getUser?email={email}&password={password}");
 
                 var response = client.GetAsync(endpoint).Result; //Content.ReadAsStringAsync().Result;
                 var responeBody = response.Content.ReadAsStringAsync().Result;
@@ -75,7 +75,7 @@ namespace Client
                 while (Console.KeyAvailable == false)
                     using (var client = new HttpClient())
                     {
-                        var endpoint = new Uri("http://localhost:39878/values/getAllStocksPricing");
+                        var endpoint = new Uri("https://stockpricing.azurewebsites.net/values/getAllStocksPricing");
                         var response = client.GetAsync(endpoint).Result.Content.ReadAsStringAsync().Result;
                         dynamic stocksJson = JsonConvert.DeserializeObject(response.ToString());
 
@@ -127,7 +127,7 @@ namespace Client
             using (var client = new HttpClient())
             {
                 var subscriptionsJson = JsonConvert.SerializeObject(userStocks);
-                var endpoint = new Uri("http://localhost:39878/values/subscribe");
+                var endpoint = new Uri("https://stockpricing.azurewebsites.net/values/subscribe");
                 var payload = new StringContent(subscriptionsJson, Encoding.UTF8, "application/json");
                 var response = client.PostAsync(endpoint, payload).Result.Content.ReadAsStringAsync().Result;
 
@@ -177,7 +177,7 @@ namespace Client
             using (var client = new HttpClient())
             {
                 var subscriptionsJson = JsonConvert.SerializeObject(userStocks);
-                var endpoint = new Uri("http://localhost:39878/values/unsubscribe");
+                var endpoint = new Uri("https://stockpricing.azurewebsites.net/values/unsubscribe");
                 var payload = new StringContent(subscriptionsJson, Encoding.UTF8, "application/json");
                 var response = client.PostAsync(endpoint, payload).Result.Content.ReadAsStringAsync().Result;
 
@@ -192,7 +192,7 @@ namespace Client
             Console.Clear();
             using (var client = new HttpClient())
             {
-                var endpoint = new Uri($"http://localhost:39878/values/getAllUserStocks?UserId={currentUser.UserId}");
+                var endpoint = new Uri($"https://stockpricing.azurewebsites.net/values/getAllUserStocks?UserId={currentUser.UserId}");
                 var response = client.GetAsync(endpoint).Result.Content.ReadAsStringAsync().Result;
                 var stocks = JsonConvert.DeserializeObject<List<string>>(response);
                 if (stocks.Count == 0)

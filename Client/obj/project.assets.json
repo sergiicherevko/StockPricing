@@ -1169,24 +1169,6 @@
           }
         }
       },
-      "Server/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
-          "Newtonsoft.Json": "13.0.2-beta3",
-          "Shared": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Server.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Server.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3572,11 +3554,6 @@
         "version.txt"
       ]
     },
-    "Server/1.0.0": {
-      "type": "project",
-      "path": "../Server/Server.csproj",
-      "msbuildProject": "../Server/Server.csproj"
-    },
     "Shared/1.0.0": {
       "type": "project",
       "path": "../Shared/Shared.csproj",
@@ -3588,7 +3565,6 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.0",
       "Newtonsoft.Json >= 13.0.2-beta3",
-      "Server >= 1.0.0",
       "Shared >= 1.0.0"
     ]
   },
@@ -3623,9 +3599,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\sergii.cherevko\\source\\repos\\StockPricing\\Server\\Server.csproj": {
-              "projectPath": "C:\\Users\\sergii.cherevko\\source\\repos\\StockPricing\\Server\\Server.csproj"
-            },
             "C:\\Users\\sergii.cherevko\\source\\repos\\StockPricing\\Shared\\Shared.csproj": {
               "projectPath": "C:\\Users\\sergii.cherevko\\source\\repos\\StockPricing\\Shared\\Shared.csproj"
             }
