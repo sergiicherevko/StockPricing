@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\sergii.cherevko\source\repos\StockPricing\Server\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2022-11-27T04:22:03.3372702Z;True|2022-11-26T13:50:40.8995167-06:00;True|2022-11-26T13:18:12.4049868-06:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

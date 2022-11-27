@@ -1,0 +1,5 @@
+C:\Users\sergii.cherevko\source\repos\StockPricing\Client\obj\Debug\netcoreapp3.1\Client.csproj.AssemblyReference.cache
+C:\Users\sergii.cherevko\source\repos\StockPricing\Client\obj\Debug\netcoreapp3.1\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sergii.cherevko\source\repos\StockPricing\Client\obj\Debug\netcoreapp3.1\Client.AssemblyInfoInputs.cache
+C:\Users\sergii.cherevko\source\repos\StockPricing\Client\obj\Debug\netcoreapp3.1\Client.AssemblyInfo.cs
+C:\Users\sergii.cherevko\source\repos\StockPricing\Client\obj\Debug\netcoreapp3.1\Client.csproj.CoreCompileInputs.cache
